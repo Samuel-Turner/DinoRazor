@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DinoRazor", "DinoRazor\DinoRazor.csproj", "{DA61D92E-628A-45F1-BA49-30F6C86596AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA61D92E-628A-45F1-BA49-30F6C86596AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA61D92E-628A-45F1-BA49-30F6C86596AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA61D92E-628A-45F1-BA49-30F6C86596AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA61D92E-628A-45F1-BA49-30F6C86596AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D61549B-5167-441B-9E7A-043C369650A9}
+	EndGlobalSection
+EndGlobal

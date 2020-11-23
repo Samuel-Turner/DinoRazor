@@ -1,0 +1,78 @@
+﻿@page
+@model DinoRazor.Pages.DinoList.IndexModel
+<br />
+<div class="container row p-0 m-0">
+    <div class="col-8">
+        <h2 class="test-info">Dinosaurs</h2>
+    </div>
+    <div class="col-4">
+        <a  asp-page="Create" class="btn btn-primary form-control text-white"> Add New Dino</a>
+    </div>
+    <!--
+    <div class="col-12 border p-2 mt-3">
+        <form method="post">
+            @if(Model.Dinos.Count() > 0)
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Dinos.FirstOrDefault().Name"></label>
+                        </th>
+                        <th>
+                            @*@Html.DisplayNameFor(m=>m.Dinos.FirstOfDefault().Period)*@
+                            <label asp-for="Dinos.FirstOrDefault().Period"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Dinos.FirstOrDefault().Diet"></label>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                    @foreach (var i in Model.Dinos)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(m => i.Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => i.Period)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(m => i.Diet)
+                            </td>
+                            <td>
+                                <button asp-page-handler="Delete" asp-route-id="@i.Id" onclick="return confirm('Are you sure you want to delete @i.Name ?')"    class="btn btn-danger btn-sm">Delete</button>
+                                <a asp-page="Edit" asp-route-id="@i.Id" class="btn btn-success btn-sm text-white">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            }
+            else
+            {
+                <p>No Dinos In table</p>
+            }
+        </form>
+    </div>
+
+    <div class="col-12" style="text-align:center">
+        <br/>
+        <span class="h3 text-info">OR</span>
+        <br/>
+    </div> -->
+    <div class="col-12 border p-3">
+        <table id="DT_load" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Period</th>
+                    <th>Diet</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+@section Scripts{ 
+ <script src="~/js/dinoList.js"></script>
+}
